@@ -1,0 +1,179 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+
+header {
+    background-color: #0077be;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 9999;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 100vw;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+section#problema {
+    background-image: url('../img/sea-turtles-eating-plastic-bags-trash-ocean-were-mistaken-jellyfish-food-297834620.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#tecnologia {
+    background-image: url('../img/81-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#objetivos {
+    background-image: url('../img/image1170x530cropped.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#publico {
+    background-image: url('../img/secti_inteligencia-artificial-696x464.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#beneficios {
+    background-image: url('../img/seo-hero-dashboard-examples_uyouwd.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#ajuda {
+    background-image: url('../img/Imagem-TA-Site-6-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    position: relative;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.card * {
+    position: relative;
+}
+
+section.active {
+    opacity: 1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 10000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+h2 {
+    color: #0077be;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+footer {
+    background-color: #0077be;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-top: auto; /* Garante que o footer fique no final da página */
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.5);
+}
