@@ -37,6 +37,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+   
 }
 
 section {
@@ -48,6 +49,7 @@ section {
     align-items: center;
     opacity: 0;
     transition: opacity 1s;
+    color: white;
 }
 
 section#problema {
@@ -157,6 +159,9 @@ p {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -176,4 +181,117 @@ footer {
     padding: 1em;
     margin-top: auto; /* Garante que o footer fique no final da página */
     box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.5);
+}
+/* Estilos para a seção de contato */
+#contato {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/fundo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilos para o cartão de contato */
+.card-contato {
+    padding: 2em;
+    background-color: rgba(12, 68, 253, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    align-self: center;
+    border-radius: 30px;
+}
+
+/* Estilos para o título na seção de formulário */
+.card-contato h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Estilos para o formulário na seção de formulário */
+.card-contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os rótulos na seção de formulário */
+.card-contato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para os inputs e textarea na seção de formulário */
+.card-contato input,
+.card-contato textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o textarea na seção de formulário */
+.card-contato textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilos para os botões na seção de formulário */
+.card-contato button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para o efeito de hover nos botões na seção de formulário */
+.card-contato button:hover {
+    background-color: #333333;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+/* Estilos para os links de mídia social */
+.social-media a {
+    margin-right: 10px;
+}
+
+/* Estilos para as imagens de mídia social */
+.social-media img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+* Estilos para a seção de informações de contato */
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Estilos para os parágrafos na seção de informações de contato */
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilos para os links na seção de informações de contato */
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o efeito de hover nos links na seção de informações de contato */
+.contact-info a:hover {
+    text-decoration: underline;
 }

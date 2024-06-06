@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OceanBlue</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
+
 <body>
     <header>
         <h1>BlueOcean</h1>
@@ -25,44 +30,89 @@
             <section id="problema" class="active">
                 <div class="card">
                     <h2>O Problema</h2>
-                    <p>Os oceanos enfrentam variações significativas que podem ser prejudiciais ao ecossistema marinho e à vida humana. A nossa solução visa alertar as pessoas sobre essas variações, permitindo que ações preventivas sejam tomadas a tempo.</p>
-                </div>    
+                    <p>Os oceanos enfrentam variações significativas que podem ser prejudiciais ao ecossistema marinho e
+                        à vida humana. A nossa solução visa alertar as pessoas sobre essas variações, permitindo que
+                        ações preventivas sejam tomadas a tempo.</p>
+                </div>
             </section>
             <section id="tecnologia">
                 <div class="card">
                     <h2>Tecnologia</h2>
-                    <p>Utilizamos uma combinação de sensores avançados, HTML, CSS e JavaScript para o front-end, e Python para o back-end. Essa integração tecnológica garante a coleta precisa de dados e a sua apresentação de forma acessível e visualmente agradável.</p>
+                    <p>Utilizamos uma combinação de sensores avançados, HTML, CSS e JavaScript para o front-end, e
+                        Python para o back-end. Essa integração tecnológica garante a coleta precisa de dados e a sua
+                        apresentação de forma acessível e visualmente agradável.</p>
                 </div>
             </section>
             <section id="objetivos">
                 <div class="card">
                     <h2>Objetivos</h2>
-                    <p>Nosso principal objetivo é alertar as pessoas sobre as condições dos oceanos em tempo real e vender essas informações para instituições interessadas. Queremos promover a conscientização e a preservação do ambiente marinho.</p>
+                    <p>Nosso principal objetivo é alertar as pessoas sobre as condições dos oceanos em tempo real e
+                        vender essas informações para instituições interessadas. Queremos promover a conscientização e a
+                        preservação do ambiente marinho.</p>
                 </div>
             </section>
             <section id="publico">
                 <div class="card">
                     <h2>Público Alvo</h2>
-                    <p>Nossa solução é direcionada principalmente a pesquisadores que estudam os oceanos e a população costeira que pode ser diretamente afetada por variações nas condições oceânicas.</p>
+                    <p>Nossa solução é direcionada principalmente a pesquisadores que estudam os oceanos e a população
+                        costeira que pode ser diretamente afetada por variações nas condições oceânicas.</p>
                 </div>
             </section>
             <section id="beneficios">
                 <div class="card">
                     <h2>Benefícios</h2>
-                    <p>Oferecemos uma visualização fácil e intuitiva dos dados coletados através de dashboards interativos. Isso permite que os usuários compreendam rapidamente as informações e tomem decisões informadas.</p>
+                    <p>Oferecemos uma visualização fácil e intuitiva dos dados coletados através de dashboards
+                        interativos. Isso permite que os usuários compreendam rapidamente as informações e tomem
+                        decisões informadas.</p>
                 </div>
             </section>
             <section id="ajuda">
                 <div class="card">
                     <h2>Como Ajudamos</h2>
-                    <p>Nossa solução facilita a captura de dados precisos e em tempo real, essenciais para pesquisas científicas e para a segurança das comunidades costeiras. Com OceanBlue, dados complexos são transformados em informações úteis e acionáveis.</p>
+                    <p>Nossa solução facilita a captura de dados precisos e em tempo real, essenciais para pesquisas
+                        científicas e para a segurança das comunidades costeiras. Com OceanBlue, dados complexos são
+                        transformados em informações úteis e acionáveis.</p>
                 </div>
             </section>
         </div>
+        <section id="contato">
+            <div class="card-contato">
+                <h1>Fale conosco</h1>
+                <form id="contato-form" onsubmit="envioContato(event)">
+                    <label for="full-name">Nome completo</label>
+                    <input type="text" id="full-name" name="full-name">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit" onclick="envioContato()">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <p>Contato</p>
+                    <a href="mailto:hi@fashion.com">BlueOcean@gmail.com</a>
+                    <p>Base local</p>
+                    <p>São Paulo, Brasil</p>
+                    <div class="social-media">
+                        <a href="https://web.facebook.com/MahindraRacing/?_rdc=1&_rdr"><img src="./img/face.jpeg"
+                                alt="Facebook"></a>
+                        <a
+                            href="https://www.instagram.com/mahindraracing?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw=="><img
+                                src="./img/instagram-6338393_1280.webp" alt="Instagram"></a>
+                        <a href="https://x.com/mahindraracing"><img src="./img/tt.jpeg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="contato-feedback"></div> <!-- Adicione este div para o feedback -->
+        </section>
+
     </main>
     <footer>
         <p>© 2024 OceanBlue. Todos os direitos reservados.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
