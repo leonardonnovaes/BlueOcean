@@ -198,6 +198,9 @@ p {
     nav ul li {
         margin: 0.5em 0;
     }
+    footer{
+        width: 100%;
+    }
 }
 
 footer {
