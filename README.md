@@ -17,8 +17,7 @@ Os oceanos enfrentam variações significativas que podem ser prejudiciais ao ec
 - **Front-end:** HTML, CSS, JavaScript
 - **Bibliotecas:** SweetAlert2
 
-## SITE
-https://gs-web-1espf.github.io/GS-WEBDEV/
+
 ## COLABORADORES
 - Gustavo Morais RM554972  <a href="https://linkedin.com/in/gustavo-morais-98a2b32b6" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gustavo morais" height="15" width="20" /></a>
 - Leonardo Novaes RM554807 <a href="https://linkedin.com/in/leonardo-novaes-64306a272/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Leonardo Novaes" height="15" width="20" /></a>
